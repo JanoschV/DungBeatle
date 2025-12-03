@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <!--
+    Variables used by all projects.
+    Do not import this file directly, use CommonSettings.csproj instead.
+  -->
+
+  <!--
+    The version to be used for all assemblies. 
+        
+   {Major}.{Minor}.{Patch}{Suffix}
+  -->
+  <PropertyGroup>
+    <CommonVersionMajor>1.0</CommonVersionMajor>
+    <CommonVersionMinor>1</CommonVersionMinor>
+    <CommonVersionPatch>0</CommonVersionPatch>
+    <!-- 
+      Make sure to include a leading dash in the suffix, e.g. "-beta", "-beta.1", "-beta.2", etc
+    -->
+    <CommonVersionSuffix>-alpha</CommonVersionSuffix>
+  </PropertyGroup>
+  <!--
+    GUIDs for the Grasshopper and the Rhino Plug-In. Make sure to set these to unique values.
+  -->
+  <PropertyGroup>
+    <GrasshopperPluginGuid>910F02EB-87B9-4FFD-8563-655B96407705</GrasshopperPluginGuid>
+    <RhinoPluginGuid>E0E34A97-8B9A-4DCC-B9C5-E165001741CB</RhinoPluginGuid>
+  </PropertyGroup>
+  <!--
+    Common name and namespace for all projects. In case you change the namespace, please also do
+    a search and replace operation on all code files.
+  -->
+  <PropertyGroup>
+    <CommonNamespace>DungBeatle</CommonNamespace>
+    <CommonName>DungBeatle</CommonName>
+  </PropertyGroup>
+  <!--
+    Author, Company, Copyright, Product
+  -->
+  <PropertyGroup>
+    <CommonAuthors>Julian Venczel</CommonAuthors>
+    <CommonAuthorContact>JulianVenczel@gmail.com</CommonAuthorContact>
+    <CommonCompany>JVCD</CommonCompany>
+    <CommonCopyright>JVCD2025</CommonCopyright>
+    <CommonProduct>A template plug-in for Grasshopper and Rhino</CommonProduct>
+    <YakName>$(CommonName)</YakName>
+    <YakAuthors>$(CommonAuthors), $(CommonCompany)</YakAuthors>
+    <YakDescription>$(CommonProduct)</YakDescription>
+    <YakUrl>https://github.com/shapediver/GrasshopperPluginTemplate</YakUrl>
+    <YakIconFile>$(MSBuildThisFileDirectory)/Artwork/PluginRhino_64.png</YakIconFile>
+    <YakKeywords>- Rhino
+- Grasshopper
+- Template</YakKeywords>
+  </PropertyGroup>
+</Project>
