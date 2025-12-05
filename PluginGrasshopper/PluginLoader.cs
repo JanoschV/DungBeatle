@@ -11,7 +11,7 @@ namespace PluginTemplate.PluginGrasshopper
     {
         public override GH_LoadingInstruction PriorityLoad()
         {
-            Instances.ComponentServer.AddCategoryIcon("PluginTemplate", ResourceLoader.LoadBitmap("PluginGrasshopper_16.png"));
+            Instances.ComponentServer.AddCategoryIcon("PluginTemplate", ResourceLoader.LoadBitmap("BeatleIcon_16.png"));
             Instances.ComponentServer.AddCategorySymbolName("PluginTemplate", 'P');
             return GH_LoadingInstruction.Proceed;
         }

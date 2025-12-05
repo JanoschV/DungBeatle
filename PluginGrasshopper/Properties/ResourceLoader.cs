@@ -23,7 +23,7 @@ namespace PluginTemplate.PluginGrasshopper
             var assembly = typeof(ResourceLoader).Assembly;
             using (var stream = assembly.GetManifestResourceStream(GetResourcePath(resourceName)))
             {
-                var streamString = @"C:\Users\julia\AppData\Roaming\Grasshopper\Libraries\net48\" + resourceName;
+                var streamString = @"C:\Users\julia\AppData\Roaming\Grasshopper\Libraries\net48\EmbeddedResources\" + resourceName;
                 if (streamString == null)
                     throw new Exception($"Failed to load resource {resourceName}");
                 return new Bitmap(streamString);
