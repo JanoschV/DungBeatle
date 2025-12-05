@@ -60,6 +60,9 @@
   </ItemGroup>
   
   <ItemGroup>
+    <EmbeddedResource Update="EmbeddedResources\BeatleIcon_16.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
     <EmbeddedResource Update="EmbeddedResources\PluginGrasshopper_16.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </EmbeddedResource>
