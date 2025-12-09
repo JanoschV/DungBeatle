@@ -52,11 +52,11 @@ namespace PluginTemplate.PluginGrasshopper
         /// to store data in output parameters.</param>
         protected override void SolveInstance(IGH_DataAccess DA)
         {
-            string name = null;
+            var name = string.Empty;
             var mandatoryAdjacencies = new List<string>();
             var adjacencies = new List<string>();
-            Interval aspectRange = new Interval();
-            Interval areaRange = new Interval();
+            var aspectRange = new Interval();
+            var areaRange = new Interval();
             var spaceType = new List<string>();
 
             if (!DA.GetData(0, ref name)) return;
